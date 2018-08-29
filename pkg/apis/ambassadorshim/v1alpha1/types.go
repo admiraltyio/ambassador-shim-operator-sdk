@@ -22,8 +22,10 @@ type Mapping struct {
 }
 
 type MappingSpec struct {
-	// Fill me
+	Prefix  string `json:"prefix"`
+	Service string `json:"service"`
 }
 type MappingStatus struct {
-	// Fill me
+	Configured bool `json:"configured"`
+	UpToDate   bool `json:"upToDate"`
 }
