@@ -1,0 +1,4 @@
+apiVersion: "ambassadorshim.admiralty.io/v1alpha1"
+kind: "Mapping"
+metadata:
+  name: "example"
