@@ -20,6 +20,7 @@ func printVersion() {
 func main() {
 	printVersion()
 	sdk.Watch("ambassadorshim.admiralty.io/v1alpha1", "Mapping", "default", 5)
+	sdk.Watch("v1", "Service", "default", 5)
 	sdk.Handle(stub.NewHandler())
 	sdk.Run(context.TODO())
 }
